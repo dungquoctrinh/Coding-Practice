@@ -16,6 +16,21 @@ public class LeetCode {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        int[] nums = {2, 7, 11, 15};
+        int[] results = SolutionEasy.twoSum(nums, 22);
+        LeetCode.checkArrayContent(results);
+    }
+    
+    public static void checkArrayContent(int[] array) {
+        if (array.length != 0) {
+            for(int i = 0; i<array.length; i++) {
+                System.out.println(array[i]);
+            }
+        }
+        else {
+            System.out.print("Can't return answer");
+        }
+        
     }
     
 }

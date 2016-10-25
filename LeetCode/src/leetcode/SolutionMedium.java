@@ -1,9 +1,6 @@
 package leetcode;
 
 
-
-
-
 /**
  *
  * @author Owner
