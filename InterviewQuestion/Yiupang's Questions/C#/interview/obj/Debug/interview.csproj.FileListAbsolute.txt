@@ -1,0 +1,7 @@
+C:\Users\yiupang\Documents\GitHub\interview-practice\interview\interview\bin\Debug\interview.exe.config
+C:\Users\yiupang\Documents\GitHub\interview-practice\interview\interview\bin\Debug\interview.exe
+C:\Users\yiupang\Documents\GitHub\interview-practice\interview\interview\bin\Debug\interview.pdb
+C:\Users\yiupang\Documents\GitHub\interview-practice\interview\interview\obj\Debug\interview.csprojResolveAssemblyReference.cache
+C:\Users\yiupang\Documents\GitHub\interview-practice\interview\interview\obj\Debug\interview.exe
+C:\Users\yiupang\Documents\GitHub\interview-practice\interview\interview\obj\Debug\interview.pdb
+C:\Users\yiupang\Documents\GitHub\interview-practice\interview\interview\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
