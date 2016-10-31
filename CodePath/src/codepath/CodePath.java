@@ -16,6 +16,7 @@ public class CodePath {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Week1.checkPalindrome("This is it");
     }
     
 }
