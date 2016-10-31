@@ -10,5 +10,8 @@ package interviewquestion;
  * @author Owner
  */
 public class LongestNonRepeatCharacter {
+    public static int LongestNonRepeatChar(String stringArray) {
+        return 0;
+    }
     
 }
