@@ -9,23 +9,12 @@ package hackerrank;
  *
  * @author Owner
  */
-public class ArraySum {
-
-    static int sum(int[] numbers) {
-        int count = numbers.length;
-        int sum = 0;
-        for (int i = 0; i < count; i++) {
-            sum += numbers[i];
-        }
-        return sum;
-    }
-
+public class Subsequence {
     static int maxLength(int[] a, int k) {
         int[][] subArraySums = new int[k][k];//store sums from index [i][j] in here
         int maxLength = 0;
 
         for (int i = 0; i < k; i++) {
-
             for (int j = i; j < k; j++) {
                 if (i == j) {
                     subArraySums[i][j] = a[i];
@@ -40,10 +29,5 @@ public class ArraySum {
             }
         }
         return maxLength;
-    }
-
-    static int longestSubsequence(String x, String y) {
-        return 0;
-
     }
 }

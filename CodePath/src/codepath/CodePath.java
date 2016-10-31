@@ -16,7 +16,13 @@ public class CodePath {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Week1.checkPalindrome("This is it");
+        int[] array = {2,3,5,5,7,11,11,11,11,13};
+       
+       // System.out.println(Week1.checkPalindrome("A man, a plan, a canal: panama"));
+        
+        
+        //System.out.println("\n" + Week1.deleteDuplicate(array));
+        System.out.println(Week1.getPrime(8));
     }
     
 }
