@@ -18,7 +18,8 @@ public class LeetCode {
         // TODO code application logic here
         int[] nums = {2, 7, 11, 15};
         int[] results = SolutionEasy.twoSum(nums, 22);
-        LeetCode.checkArrayContent(results);
+        //LeetCode.checkArrayContent(results);
+        System.out.println(SolutionMedium.lengthOfLongestSubstring("abcabcbb"));
     }
     
     public static void checkArrayContent(int[] array) {
