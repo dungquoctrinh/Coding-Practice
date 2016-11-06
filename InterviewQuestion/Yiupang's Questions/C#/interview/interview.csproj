@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="findLoneInteger.cs" />
     <Compile Include="longestSubstringNoRep.cs" />
     <Compile Include="maxBinaryGap.cs" />
     <Compile Include="Program.cs" />
