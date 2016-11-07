@@ -38,5 +38,14 @@ namespace interview
             Assert.AreEqual(mbg.getLongestGap(34), 3);
             Assert.AreEqual(mbg.getLongestGap(3135135), 2);
         }
+
+        [TestMethod]
+        public void test_getLoneInteger()
+        {
+            findLoneInteger fli = new findLoneInteger();
+            Assert.AreEqual(fli.getLoneInteger(new List<int> { 4, 5, 1, 5, 4 }), 1);
+           // Assert.AreEqual(fli.getLoneInteger((new List<int> { 4, 5, 1, 5, 4 }));
+           // Assert.AreEqual(fli.getLoneInteger((new List<int> { 4, 5, 1, 5, 4 }));
+        }
     }
 }
