@@ -50,6 +50,7 @@ public class Week2 {
          */
         public boolean addLinkedList(int value) {
             this.next = new LinkedListNode(value);
+            return true;
         }
     }
 
