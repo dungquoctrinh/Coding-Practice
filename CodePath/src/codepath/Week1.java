@@ -125,4 +125,34 @@ public class Week1 {
         }
         return null;
     }
+    
+    public static int goldStar(int[] child) {
+        int sumStar = 0;
+        int star[] = new int[child.length];
+        //assign 1 star per child
+        for(int i = 0; i < child.length; i++) {
+            if(i==0) {
+                if(child[i] > child[i+1]) {
+                    star[i] +=1;
+                }
+            }
+            else if (i != child.length - 1) {
+                if (child[i] > child[i+1] || child[i] > child[i-1]) {
+                    star[i] +=1;
+                }
+            }
+            else {
+                if (child[i] > child[i-1]) {
+                    star[i] +=1;
+                }
+            }
+        }
+        
+        for (int i = 0; i< star.length; i++) {
+            sumStar+= star[i];
+        }
+        
+        
+        return sumStar + star.length;
+    }
 }

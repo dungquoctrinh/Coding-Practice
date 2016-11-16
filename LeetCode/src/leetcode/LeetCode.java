@@ -17,9 +17,11 @@ public class LeetCode {
     public static void main(String[] args) {
         // TODO code application logic here
         int[] nums = {2, 7, 11, 15};
-        int[] results = SolutionEasy.twoSum(nums, 22);
+        //int[] results = SolutionEasy.twoSum(nums, 22);
         //LeetCode.checkArrayContent(results);
-        System.out.println(SolutionMedium.lengthOfLongestSubstring("abcabcbb"));
+        //System.out.println(SolutionMedium.lengthOfLongestSubstring("abcabcbb"));
+        System.out.println(SolutionEasy.myAtoi("321"));
+        System.out.println(SolutionEasy.myAtoi("321.17"));
     }
     
     public static void checkArrayContent(int[] array) {

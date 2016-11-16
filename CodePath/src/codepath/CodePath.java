@@ -11,6 +11,10 @@ package codepath;
  */
 public class CodePath {
 
+    /**
+     * Count sequence that increase and decrease
+     * @param nums 
+     */
     public static void UpDown(int[] nums) {
         int up = 0, down = 0;
         boolean UP = false;

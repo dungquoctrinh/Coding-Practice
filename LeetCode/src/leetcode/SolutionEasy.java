@@ -56,8 +56,26 @@ public class SolutionEasy {
      * @param str
      * @return 
      */
-    public int myAtoi(String str) {
-        return 0;
+    public static double myAtoi(String str) {
+        double result = 0;
+        int power = 0;
+        double devide = 1;
+        
+        for (int i = str.length() - 1; i >=0; i-- ) {
+            if (str.charAt(i) == '-') {
+                result = 0 - result;
+            }
+            else if (str.charAt(i) == '.') {
+                devide = Math.pow(10, power);
+            }
+            else {
+                result += (str.charAt(i) - 48) * Math.pow(10, power);
+                power++;
+                //System.out.println(result);
+            }
+            
+        }
+        return result/devide;
     }
     
     /**
