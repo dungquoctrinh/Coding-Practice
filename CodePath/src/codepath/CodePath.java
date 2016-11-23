@@ -42,12 +42,15 @@ public class CodePath {
         // TODO code application logic here
         int[] array = {2, 3, 5, 5, 7, 11, 11, 11, 11, 13};
         int[] nums = {1, 2, 3, 5, 7, 1, 3, 6, 7, 5, 3};
+        int[] keys = {1, 2, 3, 4};
         //int[] nums = {1,2,3};
 
         // System.out.println(Week1.checkPalindrome("A man, a plan, a canal: panama"));
         //System.out.println("\n" + Week1.deleteDuplicate(array));
         //System.out.println(Week1.getPrime(8));
-        UpDown(nums);
+        //UpDown(nums);
+        
+        Week3.createBST(keys);
     }
 
 }

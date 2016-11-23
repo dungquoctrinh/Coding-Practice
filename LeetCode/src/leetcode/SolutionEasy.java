@@ -48,7 +48,23 @@ public class SolutionEasy {
      * @return 
      */
     public int reverse(int x) {
-        return 0;
+        boolean flag = false;
+        if (x < 0) {
+            flag = true;
+            x = 0 - x;
+        }
+        int result = 0;
+        int number = 0;
+        
+        while (x > 0) {
+            number = x % 10;
+            result+= result*10+number;
+        }
+        
+        if (flag == true) {
+            result*=-1;
+        }
+        return result;
     }
     
     /**
