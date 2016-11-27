@@ -118,12 +118,83 @@ public class Week1 {
      * @return 
      */
     public static String longestPalindrome(String theString) {
-        String curString = theString.substring(0);
-        int size = curString.length();
-        for(int i = 1; i < theString.length(); i++) {
-            
+        if (theString == null || theString.length() == 0)
+        {
+            return null;
         }
-        return null;
+        if (theString.length() == 1)
+        {
+            return theString;
+        }
+        
+        int maxLength = 0;
+        String longestString = "";
+        
+        int size = theString.length();
+        //table contain the letter
+        int[][] table = new int[size][size];
+        
+        //the position at a has lenghth equal 1
+        for(int i = 0; i < size; i++)
+        {
+            table[i][i] = 1;
+        }
+        
+        //DEBUG: 
+        printTable(table);
+        
+        //two consecutive letter if the same is the palindrome
+        //Ex: aa
+        for (int i = 0; i <= size - 2; i++)
+        {
+            if(theString.charAt(i) == theString.charAt(i+1))
+            {
+                table[i][i+1] = 1;
+                longestString = theString.substring(i, i+2);
+            }
+        }
+        //DEBUG: printTable(table);
+        
+        //l is the jump rang
+        for (int l = 2; l <= size - 1; l++)
+        {
+            for (int i = 0; i < size - 3; i++)
+            {
+                int j = i + l;
+                if(theString.charAt(i) == theString.charAt(j))
+                {
+                    table[i][j] = table[i + 1][j-1];
+                    if(table[i][j] == 1 && 1 > maxLength)
+                    {
+                        longestString = theString.substring(i, j+1);
+                    }
+                }
+                else
+                {
+                    table[i][j] = 0;
+                }
+                //DEBUG: 
+                printTable(table);
+            }
+        }
+        return longestString;
+    }
+    
+    /**
+     * Helper function to print the result from the matrix
+     * @param matrix 
+     */
+    public static void printTable(int[][] matrix)
+    {
+        for (int[]y : matrix)
+        {
+            for(int z:y)
+            {
+                System.out.print(z);
+            }
+            System.out.println();
+        }    
+        System.out.println("------------------");
     }
     
     public static int goldStar(int[] child) {
@@ -154,5 +225,19 @@ public class Week1 {
         
         
         return sumStar + star.length;
+    }
+    
+    /**
+     * Take int[][] and return array in spiral order 
+     * Ex:
+     *      int[][]matrix = {{1,2,3}, {4,5,6}, {7,8,9}}
+     * return int[] = {1,2,3,6,9,8,7,4,5}
+     * @param input
+     * @return 
+     */
+    public static int[] spiralOrder(int[][] matrix)
+    {
+        
+        return null;
     }
 }

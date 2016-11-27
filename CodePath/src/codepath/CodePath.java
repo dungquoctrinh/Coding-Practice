@@ -50,7 +50,10 @@ public class CodePath {
         //System.out.println(Week1.getPrime(8));
         //UpDown(nums);
         
-        Week3.createBST(keys);
+        //Week3.createBST(keys);
+        
+        //BUG: Week1.longestPalindrome("dabcba");
+        //Week1.longestPalindrome("abcdefgabcba");
     }
 
 }
