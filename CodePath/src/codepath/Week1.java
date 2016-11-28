@@ -240,4 +240,24 @@ public class Week1 {
         
         return null;
     }
+    
+    /**
+     * get the common prefix in the array of String
+     * {"bceefgh", "bcfghijk", "bcefgh"} return "bc"
+     * @param list
+     * @return 
+     */
+    public static String longCommonString(String[] list)
+    {
+        String prefix = "";
+        if (list == null || list.length == 0)
+        {
+            return prefix;
+        }
+        prefix = list[0];
+        for(int i = 1; i < list.length; i++)
+            while(list[i].indexOf(prefix) != 0) 
+                prefix=prefix.substring(0, prefix.length()-1);
+        return prefix;
+    }
 }

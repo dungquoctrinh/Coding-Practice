@@ -54,6 +54,8 @@ public class CodePath {
         
         //BUG: Week1.longestPalindrome("dabcba");
         //Week1.longestPalindrome("abcdefgabcba");
+        String[] list = {"bceefgh", "bcfgh", "bcefgh"};
+        System.out.println(Week1.longCommonString(list));
     }
 
 }

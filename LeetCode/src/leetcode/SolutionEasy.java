@@ -89,7 +89,6 @@ public class SolutionEasy {
                 power++;
                 //System.out.println(result);
             }
-            
         }
         return result/devide;
     }
