@@ -54,8 +54,11 @@ public class CodePath {
         
         //BUG: Week1.longestPalindrome("dabcba");
         //Week1.longestPalindrome("abcdefgabcba");
-        String[] list = {"bceefgh", "bcfgh", "bcefgh"};
-        System.out.println(Week1.longCommonString(list));
+        //String[] list = {"bceefgh", "bcfgh", "bcefgh"};
+        //System.out.println(Week1.longCommonString(list));
+        LinkedListNode<Integer> list1 = Week2Challenge.LinkedListreverseIntegerList(12);
+        LinkedListNode<Integer> list2 = Week2Challenge.LinkedListreverseIntegerList(56);
+        list1.checkLinkedList(list1);
     }
 
 }
