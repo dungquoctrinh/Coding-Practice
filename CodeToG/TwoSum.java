@@ -4,7 +4,7 @@
 
 //Given nums = [2, 7, 11, 15], target = 9
 
-class Solution {
+class twoSumS {
     public int[] twoSum(int[] nums, int target) {
         int[] result = new int[2];
         for (int i = 0; i < nums.length - 1; i ++)
